@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бюро 42 — Маркетинг с интеллектом</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-dmvFe3zzNzJmItiSmXY2Zp9UpkPdM4FBRYI+R+n6eP1tYZF2OlJzSWhPZbgEm9Vf6+yAmN+mLuJLbj7mGhRUBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            fadeInUp: 'fadeInUp 0.8s ease-out both',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: 0, transform: 'translateY(20px)' },
+              '100%': { opacity: 1, transform: 'translateY(0)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Хедер -->
+  <header class="flex justify-between items-center px-8 py-6 shadow-md animate-fadeInUp">
+    <div class="text-2xl font-bold">Бюро 42</div>
+    <nav class="space-x-6 text-sm uppercase">
+      <a href="#about" class="hover:underline">О нас</a>
+      <a href="#services" class="hover:underline">Услуги</a>
+      <a href="#cases" class="hover:underline">Кейсы</a>
+      <a href="#contact" class="hover:underline">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- Hero-блок -->
+  <section class="px-8 py-20 bg-gray-50 relative overflow-hidden animate-fadeInUp">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Маркетинг с интеллектом. И без паники.</h1>
+        <p class="text-lg text-gray-600 mb-8">Мы проверим гипотезы, а не ваши нервы.</p>
+        <div class="space-x-4">
+          <a href="#services" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl text-sm font-semibold hover:bg-indigo-700 transition">Услуги</a>
+          <a href="#contact" class="inline-block bg-white border border-gray-300 px-6 py-3 rounded-xl text-sm font-semibold hover:bg-gray-100 transition">Оставить заявку</a>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="mice-hero.png" alt="Лабораторные мыши" class="rounded-2xl shadow-lg w-full max-w-md mx-auto animate-fadeInUp">
+      </div>
+    </div>
+  </section>
+
+<!-- О нас -->
+  <section id="about" class="px-8 py-20 bg-gradient-to-r from-indigo-50 to-indigo-100">
+    <div class="max-w-5xl mx-auto text-center animate-fadeInUp">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">О нас</h2>
+      <p class="text-lg text-gray-600 mb-4">
+        Бюро 42 — маркетинговое агентство со встроенным интеллектом и без лишнего шума. Мы совмещаем аналитику, UX и здравый смысл, чтобы ваш бизнес рос устойчиво.
+      </p>
+      <p class="text-lg text-gray-600">
+        Нас выбирают компании, которым важны не просто клики, а реальные результаты. Мы не «постим ради поста» — только ради продаж.
+      </p>
+    </div>
+  </section>
+
+  <!-- Услуги -->
+  <section id="services" class="px-8 py-20 bg-white">
+    <div class="max-w-7xl mx-auto text-center animate-fadeInUp">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12">Наши услуги</h2>
+      <div class="grid gap-10 md:grid-cols-3 text-left">
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+          <h3 class="text-xl font-semibold mb-2">Аналитика и аудит</h3>
+          <p class="text-gray-600">Оценим эффективность каналов, сайта и контента. Выявим точки роста и слабые места.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+          <h3 class="text-xl font-semibold mb-2">Продвижение на маркетплейсах</h3>
+          <p class="text-gray-600">Оптимизируем карточки, рекламу, ассортимент. Поможем выйти в топ и увеличить продажи.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+          <h3 class="text-xl font-semibold mb-2">SEO и сайты</h3>
+          <p class="text-gray-600">SEO-аудит, разработка и улучшение сайтов, адаптация под бизнес-задачи.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+          <h3 class="text-xl font-semibold mb-2">Контент и визуал</h3>
+          <p class="text-gray-600">Пишем, оформляем и показываем ваш бизнес в правильном свете. Фото, видео, тексты.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+          <h3 class="text-xl font-semibold mb-2">SMM и инфлюенсеры</h3>
+          <p class="text-gray-600">Стратегия, постинг, креативы, лидогенерация. Telegram, ВКонтакте и лидеры мнений.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+          <h3 class="text-xl font-semibold mb-2">Контекст и CRM</h3>
+          <p class="text-gray-600">Яндекс.Директ, ретаргетинг, авторассылки и оптимизация воронки.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Почему мы -->
+  <section id="why-us" class="px-8 py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto text-center animate-fadeInUp">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12">Почему выбирают нас</h2>
+      <div class="grid gap-8 md:grid-cols-3 text-left">
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <h3 class="text-lg font-semibold mb-2">Комплексный подход</h3>
+          <p class="text-gray-600">От стратегии и дизайна до настройки CRM — мы работаем как единая команда с фокусом на результат.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <h3 class="text-lg font-semibold mb-2">Аналитика вместо догадок</h3>
+          <p class="text-gray-600">Каждое решение опирается на цифры. Мы не «постим ради поста» — только ради продаж.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <h3 class="text-lg font-semibold mb-2">Стиль и интеллект</h3>
+          <p class="text-gray-600">Упаковка — это важно. Но главное — внутри. Мы не просто красивые, мы эффективные.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Кейсы -->
+  <section id="cases" class="px-8 py-20 bg-white">
+    <div class="max-w-6xl mx-auto text-center animate-fadeInUp">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12">Кейсы</h2>
+      <div class="grid gap-8 md:grid-cols-2 text-left">
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+          <h3 class="text-lg font-semibold mb-2">Рост заказов x3 на маркетплейсах</h3>
+          <p class="text-gray-600">Оптимизировали карточки, рекламные кампании и работу с отзывами. Результат — рост продаж на 212% за 3 месяца.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
+          <h3 class="text-lg font-semibold mb-2">Сайт с нуля и стабильный поток лидов</h3>
+          <p class="text-gray-600">Разработали сайт, посадочные и связали всё с CRM. Получили 10+ входящих заявок в неделю уже с первого месяца запуска.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact" class="px-8 py-20 bg-indigo-50">
+    <div class="max-w-3xl mx-auto text-center animate-fadeInUp">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Контакты</h2>
+      <p class="text-lg text-gray-700 mb-8">Оставьте заявку, и мы свяжемся с вами в ближайшее время.</p>
+      <form class="grid gap-4 md:grid-cols-2 text-left">
+        <input type="text" placeholder="Ваше имя" class="p-3 rounded-lg border border-gray-300">
+        <input type="email" placeholder="Email или Telegram" class="p-3 rounded-lg border border-gray-300">
+        <textarea placeholder="Коротко опишите задачу" class="p-3 rounded-lg border border-gray-300 md:col-span-2" rows="4"></textarea>
+        <button type="submit" class="bg-indigo-600 text-white py-3 px-6 rounded-lg md:col-span-2 hover:bg-indigo-700 transition">Отправить заявку</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="bg-gray-900 text-white text-sm text-center py-6">
+    <p class="mb-2">© Бюро 42, 2025. Не забывайте полотенце 🧼</p>
+    <div class="space-x-4">
+      <a href="#" class="hover:underline">Telegram</a>
+      <a href="Info@buro-42.ru" class="hover:underline">Email</a>
+    </div>
+  </footer>
+
+</body>
+</html>
